@@ -1,4 +1,4 @@
-Virtual User Script started at: 27.11.2019 16:31:34
+Virtual User Script started at: 27.11.2019 16:41:37
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 12.60.0 for Windows 10; build 971 (‡‚„ 09 2018 11:27:13)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -9,10 +9,6 @@ Running Vuser...
 Starting iteration 1.
 Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
 Starting action Action.
-Action.c(4): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(4): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(6): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(6): web_add_cookie was successful  	[MsgId: MMSG-26392]
 Action.c(8): web_url("learning2.pflb.ru:56902") started  	[MsgId: MMSG-26355]
 Action.c(8): Found resource "http://learning2.pflb.ru:56902/css/core/material_icons.css" in HTML "http://learning2.pflb.ru:56902/"  	[MsgId: MMSG-26659]
 Action.c(8): Found resource "http://learning2.pflb.ru:56902/css/core/materialize.min.css" in HTML "http://learning2.pflb.ru:56902/"  	[MsgId: MMSG-26659]
@@ -49,8 +45,6 @@ Action.c(8): Downloading resource "http://learning2.pflb.ru:56902/css/fonts/robo
 Action.c(8): Downloading resource "http://learning2.pflb.ru:56902/js/core/jqueryformplugin.js?_=1574849622149" (specified by argument number 20)  	[MsgId: MMSG-26577]
 Action.c(8): Downloading resource "http://learning2.pflb.ru:56902/favicon.ico" (specified by argument number 22)  	[MsgId: MMSG-26577]
 Action.c(8): web_url("learning2.pflb.ru:56902") was successful, 1210039 body bytes, 6816 header bytes  	[MsgId: MMSG-26386]
-Action.c(26): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(26): web_add_cookie was successful  	[MsgId: MMSG-26392]
 Action.c(28): web_url("login") started  	[MsgId: MMSG-26355]
 Action.c(28): Resource "http://learning2.pflb.ru:56902/css/core/material_icons.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(28): Found resource "http://learning2.pflb.ru:56902/css/core/materialize.css" in HTML "http://learning2.pflb.ru:56902/login"  	[MsgId: MMSG-26659]
@@ -65,20 +59,8 @@ Action.c(28): Downloading resource "http://learning2.pflb.ru:56902/tpl/login/log
 Action.c(28): Downloading resource "http://learning2.pflb.ru:56902/images/logo_2.png" (specified by argument number 12)  	[MsgId: MMSG-26577]
 Action.c(28): web_url("login") was successful, 717873 body bytes, 1353 header bytes  	[MsgId: MMSG-26386]
 Action.c(41): Notify: Transaction "UC03_TR01_Login" started.
-Action.c(43): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(43): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(45): web_add_header("X-Requested-With") started  	[MsgId: MMSG-26355]
-Action.c(45): web_add_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
 Action.c(50): web_submit_data("login_2") started  	[MsgId: MMSG-26355]
 Action.c(50): web_submit_data("login_2") was successful, 146 body bytes, 339 header bytes  	[MsgId: MMSG-26386]
-Action.c(63): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(63): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(65): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(65): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(67): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(67): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(71): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(71): web_add_cookie was successful  	[MsgId: MMSG-26392]
 Action.c(73): web_url("learning2.pflb.ru:56902_2") started  	[MsgId: MMSG-26355]
 Action.c(73): Retrieving data from cache for "http://learning2.pflb.ru:56902/"  	[MsgId: MMSG-26558]
 Action.c(73): Resource "http://learning2.pflb.ru:56902/css/core/material_icons.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
@@ -122,8 +104,6 @@ Action.c(73): Downloading resource "http://learning2.pflb.ru:56902/images/logo-5
 Action.c(73): Downloading resource "http://learning2.pflb.ru:56902/tpl/support/ticketComment.dust" (specified by argument number 31)  	[MsgId: MMSG-26577]
 Action.c(73): Downloading resource "http://learning2.pflb.ru:56902/images/attachment.png" (specified by argument number 33)  	[MsgId: MMSG-26577]
 Action.c(73): web_url("learning2.pflb.ru:56902_2") was successful, 387888 body bytes, 4042 header bytes  	[MsgId: MMSG-26386]
-Action.c(96): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
-Action.c(96): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
 Action.c(99): web_url("checkLogin") started  	[MsgId: MMSG-26355]
 Action.c(99): web_url("checkLogin") was successful, 92 body bytes, 316 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(109): web_url("info") started  	[MsgId: MMSG-26355]
@@ -133,57 +113,63 @@ Action.c(119): web_url("4") was successful, 52 body bytes, 316 header bytes, 11 
 Action.c(129): web_url("countByState") started  	[MsgId: MMSG-26355]
 Action.c(129): web_url("countByState") was successful, 218 body bytes, 316 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(139): web_custom_request("ticket") started  	[MsgId: MMSG-26355]
-Action.c(139): web_custom_request("ticket") was successful, 12357 body bytes, 316 header bytes, 21 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(139): web_custom_request("ticket") was successful, 12535 body bytes, 316 header bytes, 21 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(151): web_set_sockets_option started  	[MsgId: MMSG-26355]
 Action.c(151): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
-Action.c(153): Notify: Transaction "UC03_TR01_Login" ended with a "Pass" status (Duration: 1.5169 Wasted Time: 0.1667).
-Action.c(155): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(155): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(157): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(157): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(159): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(159): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(161): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(161): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(163): web_remove_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
-Action.c(163): Previous automatically added web header for "X-Requested-With" removed  	[MsgId: MMSG-26587]
-Action.c(163): web_remove/revert_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
-Action.c(165): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(165): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(167): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(167): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(169): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(169): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(171): web_add_cookie started  	[MsgId: MMSG-26355]
-Action.c(171): web_add_cookie was successful  	[MsgId: MMSG-26392]
-Action.c(173): web_add_header("UA-CPU") started  	[MsgId: MMSG-26355]
-Action.c(173): web_add_header("UA-CPU") was successful  	[MsgId: MMSG-26392]
+Action.c(153): Notify: Transaction "UC03_TR01_Login" ended with a "Pass" status (Duration: 1.6492 Wasted Time: 0.1483).
 Action.c(176): web_url("iecompatviewlist.xml") started  	[MsgId: MMSG-26355]
 Action.c(176): Downloading resource "https://c.urs.microsoft.com/l1.dat?cw=637102745224357591&v=3&cv=9.11.17763.0&os=10.0.17763.0.0&pg=4A72F430-B40C-4D36-A068-CE33ADA5ADF9" (specified by argument number 10)  	[MsgId: MMSG-26577]
 Action.c(176): web_url("iecompatviewlist.xml") was successful, 96673 body bytes, 681 header bytes  	[MsgId: MMSG-26386]
 Action.c(188): Notify: Transaction "UC03_TR02_Show_tasks" started.
-Action.c(190): web_add_auto_header("X-Requested-With") started  	[MsgId: MMSG-26355]
-Action.c(190): web_add_auto_header("X-Requested-With") was successful  	[MsgId: MMSG-26392]
 Action.c(193): web_url("countByState_2") started  	[MsgId: MMSG-26355]
 Action.c(193): web_url("countByState_2") was successful, 171 body bytes, 316 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(203): web_custom_request("task") started  	[MsgId: MMSG-26355]
 Action.c(203): web_custom_request("task") was successful, 15273 body bytes, 316 header bytes, 21 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(215): Notify: Transaction "UC03_TR02_Show_tasks" ended with a "Pass" status (Duration: 0.7377 Wasted Time: 0.0475).
+Action.c(215): Notify: Transaction "UC03_TR02_Show_tasks" ended with a "Pass" status (Duration: 0.7063 Wasted Time: 0.0366).
 Action.c(217): Notify: Transaction "UC03_TR03_Open_task" started.
 Action.c(219): web_url("149362") started  	[MsgId: MMSG-26355]
 Action.c(219): web_url("149362") was successful, 1729 body bytes, 316 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(229): web_url("checkLogin_2") started  	[MsgId: MMSG-26355]
 Action.c(229): web_url("checkLogin_2") was successful, 92 body bytes, 316 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
 Action.c(239): web_url("comment") started  	[MsgId: MMSG-26355]
-Action.c(239): web_url("comment") was successful, 532 body bytes, 316 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(249): Notify: Transaction "UC03_TR03_Open_task" ended with a "Pass" status (Duration: 0.6758 Wasted Time: 0.0662).
+Action.c(239): web_url("comment") was successful, 1102 body bytes, 316 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(249): Notify: Transaction "UC03_TR03_Open_task" ended with a "Pass" status (Duration: 0.6224 Wasted Time: 0.0577).
 Action.c(253): Notify: Transaction "UC03_TR04_Add_comment" started.
 Action.c(255): web_submit_data("file") started  	[MsgId: MMSG-26355]
-Action.c(255): Error -26488: Could not obtain information about submitted file "C:UsersstudentDownloads—ıÂÏ‡ ÚÂÒÚ‡.png": _stat32 rc=-1, errno=2 [No such file or directory]. Using an empty file  	[MsgId: MERR-26488]
-Action.c(255): Aborting pending download of URL="http://learning2.pflb.ru:56902/api/ticket/file/" (RelFrameId=1, Internal ID=69)  	[MsgId: MMSG-27650]
-Action.c(255): web_submit_data("file") highest severity level was "ERROR", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
-Action.c(255): Notify: Transaction "UC03_TR04_Add_comment" ended with a "Fail" status (Duration: 0.0236 Wasted Time: 0.0086).
-Action.c(255): Notify: Transaction "UC03_TR04_Add_comment" has 0 error message(s).
+Action.c(255): web_submit_data("file") was successful, 41241 body bytes, 316 header bytes, 52 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(268): Notify: Transaction "UC03_TR04_Add_comment" ended with a "Pass" status (Duration: 0.0959 Wasted Time: 0.0301).
+Action.c(272): Notify: Transaction "UC03_TR05_Submit_comment" started.
+Action.c(274): web_custom_request("comment_2") started  	[MsgId: MMSG-26355]
+Action.c(274): web_custom_request("comment_2") was successful, 185 body bytes, 316 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(287): web_url("comment_3") started  	[MsgId: MMSG-26355]
+Action.c(287): web_url("comment_3") was successful, 1278 body bytes, 316 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(297): Notify: Transaction "UC03_TR05_Submit_comment" ended with a "Pass" status (Duration: 0.3140 Wasted Time: 0.0376).
+Action.c(301): Notify: Transaction "UC03_TR06_Logout" started.
+Action.c(303): web_url("logout") started  	[MsgId: MMSG-26355]
+Action.c(303): Redirecting "http://learning2.pflb.ru:56902/api/logout" (redirection depth is 0)  	[MsgId: MMSG-26694]
+Action.c(303): To location "http://learning2.pflb.ru:56902/login.html"  	[MsgId: MMSG-26693]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/css/core/material_icons.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/css/core/materialize.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/css/style.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/js/core/legacy.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/js/core/jquery-3.1.1.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/js/core/dust.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/js/core/jquery.cookie.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/js/core/materialize.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): Resource "http://learning2.pflb.ru:56902/js/page/authorisation.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(303): web_url("logout") was successful, 873 body bytes, 675 header bytes  	[MsgId: MMSG-26386]
+Action.c(314): web_url("login_3") started  	[MsgId: MMSG-26355]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/css/core/material_icons.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/css/core/materialize.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/css/style.css" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/js/core/legacy.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/js/core/jquery-3.1.1.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/js/core/dust.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/js/core/jquery.cookie.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/js/core/materialize.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): Resource "http://learning2.pflb.ru:56902/js/page/authorisation.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(314): web_url("login_3") was successful, 873 body bytes, 392 header bytes  	[MsgId: MMSG-26386]
+Action.c(324): Notify: Transaction "UC03_TR06_Logout" ended with a "Pass" status (Duration: 0.1189 Wasted Time: 0.0473).
 Ending action Action.
 Ending iteration 1.
 Ending Vuser...

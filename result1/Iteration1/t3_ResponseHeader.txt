@@ -5,7 +5,7 @@ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Pragma: no-cache
 Expires: 0
 X-Frame-Options: SAMEORIGIN
-Set-Cookie: SESSION=9bc9e5e7-77cf-435e-b290-5acea6e5a492; Path=/; HttpOnly
+Set-Cookie: SESSION=f32dd6a2-3c8e-41af-bd04-8e9c455ab037; Path=/; HttpOnly
 Content-Length: 146
-Date: Wed, 27 Nov 2019 13:33:38 GMT
+Date: Wed, 27 Nov 2019 13:43:13 GMT
 
