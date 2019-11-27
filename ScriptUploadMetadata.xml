@@ -32,6 +32,7 @@
     <FileEntry Name="UC03_Comment_task.c.pickle" Filter="1" />
     <FileEntry Name="UC03_Comment_task.ci" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name=".git\" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
     <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>

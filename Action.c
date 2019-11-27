@@ -262,7 +262,7 @@ Action()
 		"Snapshot=t16.inf", 
 		"Mode=HTML", 
 		ITEMDATA, 
-		"Name=files", "Value=Схема теста.png", "File=Yes", ENDITEM, 
+		"Name=files", "Value=..\\Scheme.png", "File=Yes", ENDITEM, 
 		LAST);
 
 	lr_end_transaction("UC03_TR04_Add_comment",LR_AUTO);
