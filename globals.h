@@ -1,5 +1,6 @@
 #ifndef _GLOBALS_H 
 #define _GLOBALS_H
+#define TNINKTIME 10
 
 //--------------------------------------------------------------------
 // Include Files

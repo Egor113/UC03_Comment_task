@@ -1136,6 +1136,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
+
  
  
 
@@ -2572,7 +2573,7 @@ void
 
 
 
-# 7 "globals.h" 2
+# 8 "globals.h" 2
 
 # 1 "lrw_custom_body.h" 1
  
@@ -2580,7 +2581,7 @@ void
 
 
 
-# 8 "globals.h" 2
+# 9 "globals.h" 2
 
 
  
@@ -2606,10 +2607,8 @@ vuser_init()
 }
 # 4 "c:\\users\\student\\desktop\\ogdanets\\project\\uc03_comment_task\\\\combined_UC03_Comment_task.c" 2
 
-# 1 "Action.c" 1
-int task_index;
-
-Action()
+# 1 "UC03_Login.c" 1
+UC03_Login()
 {
 	 
 	 
@@ -2714,7 +2713,17 @@ Action()
 	web_set_sockets_option("SSL_VERSION", "TLS1.2");
 
 	lr_end_transaction("UC03_TR01_Login",2);
+	return 0;
+}
+# 5 "c:\\users\\student\\desktop\\ogdanets\\project\\uc03_comment_task\\\\combined_UC03_Comment_task.c" 2
 
+# 1 "UC03_Comment.c" 1
+int task_index;
+
+UC03_Comment()
+{
+	lr_think_time(10);
+	
 	lr_start_transaction("UC03_TR02_Show_tasks");
 
 	web_url("/api/task/countByState/", 
@@ -2752,6 +2761,8 @@ Action()
 	lr_save_string(lr_paramarr_idx("taskIdS", task_index), "taskID");
 
 	lr_end_transaction("UC03_TR02_Show_tasks",2);
+	
+	lr_think_time(10);
 
 	lr_start_transaction("UC03_TR03_Open_task");
 
@@ -2787,7 +2798,7 @@ Action()
 
 	lr_end_transaction("UC03_TR03_Open_task",2);
 
-	lr_think_time(46);
+	lr_think_time(10);
 
 	lr_start_transaction("UC03_TR04_Add_comment");
 
@@ -2806,7 +2817,7 @@ Action()
 
 	lr_end_transaction("UC03_TR04_Add_comment",2);
 
-	lr_think_time(49);
+	lr_think_time(10);
 
 	lr_start_transaction("UC03_TR05_Submit_comment");
 
@@ -2835,8 +2846,15 @@ Action()
 
 	lr_end_transaction("UC03_TR05_Submit_comment",2);
 
-	lr_think_time(37);
+	lr_think_time(10);
 
+	return 0;
+}
+# 6 "c:\\users\\student\\desktop\\ogdanets\\project\\uc03_comment_task\\\\combined_UC03_Comment_task.c" 2
+
+# 1 "UC03_Logout.c" 1
+UC03_Logout()
+{
 	lr_start_transaction("UC03_TR06_Logout");
 
 	web_url("/api/logout", 
@@ -2859,15 +2877,17 @@ Action()
 		"LAST");
 
 	lr_end_transaction("UC03_TR06_Logout",2);
-
+	
 	return 0;
 }
-# 5 "c:\\users\\student\\desktop\\ogdanets\\project\\uc03_comment_task\\\\combined_UC03_Comment_task.c" 2
+# 7 "c:\\users\\student\\desktop\\ogdanets\\project\\uc03_comment_task\\\\combined_UC03_Comment_task.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
+	lrvtc_disconnect();
+		
 	return 0;
 }
-# 6 "c:\\users\\student\\desktop\\ogdanets\\project\\uc03_comment_task\\\\combined_UC03_Comment_task.c" 2
+# 8 "c:\\users\\student\\desktop\\ogdanets\\project\\uc03_comment_task\\\\combined_UC03_Comment_task.c" 2
 

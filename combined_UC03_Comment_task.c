@@ -2,5 +2,7 @@
 #include "SharedParameter.h"
 #include "globals.h"
 #include "vuser_init.c"
-#include "Action.c"
+#include "UC03_Login.c"
+#include "UC03_Comment.c"
+#include "UC03_Logout.c"
 #include "vuser_end.c"
