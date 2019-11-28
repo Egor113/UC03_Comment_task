@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=
+ParameterFile=UC03_Comment_task.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
@@ -35,7 +35,7 @@ Default Profile=default.cfg
 [ExtraFiles]
 globals.h=
 [Modified Actions]
-vuser_init=0
+vuser_init=1
 Action=1
 vuser_end=0
 [Recorded Actions]
@@ -53,7 +53,7 @@ vuser_end=cci
 [TransactionsOrder]
 Order="UC03_TR01_Login__*delimiter*__UC03_TR02_Show_tasks__*delimiter*__UC03_TR03_Open_task__*delimiter*__UC03_TR04_Add_comment__*delimiter*__UC03_TR05_Submit_comment__*delimiter*__UC03_TR06_Logout"
 [StateManagement]
-LastReplayStatus=1
+LastReplayStatus=3
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
