@@ -2613,7 +2613,7 @@ Action()
 	 
 	 
 	
-	web_url("{Domain}:{Port}", 
+	web_url("/", 
 		"URL={Host}:{Port}/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2623,7 +2623,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("login", 
+	web_url("/login", 
 		"URL={Host}:{Port}/login", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2635,7 +2635,7 @@ Action()
 
 	lr_start_transaction("UC03_TR01_Login");
 
-	web_submit_data("login_2", 
+	web_submit_data("/api/login", 
 		"Action={Host}:{Port}/api/login", 
 		"Method=POST", 
 		"TargetFrame=", 
@@ -2648,7 +2648,7 @@ Action()
 		"Name=rememberMe", "Value=false", "ENDITEM", 
 		"LAST");
 
-	web_url("{Domain}:{Port}_2", 
+	web_url("{/", 
 		"URL={Host}:{Port}/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2657,7 +2657,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("checkLogin", 
+	web_url("}/api/checkLogin", 
 		"URL={Host}:{Port}/api/checkLogin", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2667,7 +2667,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("info", 
+	web_url("/api/user/info", 
 		"URL={Host}:{Port}/api/user/info", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2677,7 +2677,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("4", 
+	web_url("/api/ticket/countByState/4", 
 		"URL={Host}:{Port}/api/ticket/countByState/4", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2687,7 +2687,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("countByState", 
+	web_url("/api/ticket/countByState/", 
 		"URL={Host}:{Port}/api/ticket/countByState/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2697,7 +2697,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_custom_request("ticket", 
+	web_custom_request("/api/ticket/", 
 		"URL={Host}:{Port}/api/ticket/?state=-1,0,1,5&page=0&size=10", 
 		"Method=GET", 
 		"TargetFrame=", 
@@ -2715,7 +2715,7 @@ Action()
 
 	lr_start_transaction("UC03_TR02_Show_tasks");
 
-	web_url("countByState_2", 
+	web_url("/api/task/countByState/", 
 		"URL={Host}:{Port}/api/task/countByState/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2725,7 +2725,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_custom_request("task", 
+	web_custom_request("/api/task/", 
 		"URL={Host}:{Port}/api/task/?state=1&page=0&size=10", 
 		"Method=GET", 
 		"TargetFrame=", 
@@ -2741,7 +2741,7 @@ Action()
 
 	lr_start_transaction("UC03_TR03_Open_task");
 
-	web_url("149362", 
+	web_url("/api/task/149362", 
 		"URL={Host}:{Port}/api/task/149362", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2751,7 +2751,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("checkLogin_2", 
+	web_url("/api/checkLogin", 
 		"URL={Host}:{Port}/api/checkLogin", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2761,7 +2761,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("comment", 
+	web_url("/api/ticket/149362/comment/", 
 		"URL={Host}:{Port}/api/ticket/149362/comment/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2777,7 +2777,7 @@ Action()
 
 	lr_start_transaction("UC03_TR04_Add_comment");
 
-	web_submit_data("file", 
+	web_submit_data("/api/ticket/file/", 
 		"Action={Host}:{Port}/api/ticket/file/", 
 		"Method=POST", 
 		"EncType=multipart/form-data", 
@@ -2796,7 +2796,7 @@ Action()
 
 	lr_start_transaction("UC03_TR05_Submit_comment");
 
-	web_custom_request("comment_2", 
+	web_custom_request("/api/ticket/149362/comment/", 
 		"URL={Host}:{Port}/api/ticket/149362/comment/", 
 		"Method=POST", 
 		"TargetFrame=", 
@@ -2809,7 +2809,7 @@ Action()
 		"Body={\"text\":\"New comment Ogdanets\",\"files\":[4696]}", 
 		"LAST");
 
-	web_url("comment_3", 
+	web_url("/api/ticket/149362/comment/", 
 		"URL={Host}:{Port}/api/ticket/149362/comment/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2825,7 +2825,7 @@ Action()
 
 	lr_start_transaction("UC03_TR06_Logout");
 
-	web_url("logout", 
+	web_url("/api/logout", 
 		"URL={Host}:{Port}/api/logout", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2834,7 +2834,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("login_3", 
+	web_url("/login", 
 		"URL={Host}:{Port}/login", 
 		"TargetFrame=", 
 		"Resource=0", 
