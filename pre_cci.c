@@ -2607,6 +2607,8 @@ vuser_init()
 # 4 "c:\\users\\student\\desktop\\ogdanets\\project\\uc03_comment_task\\\\combined_UC03_Comment_task.c" 2
 
 # 1 "Action.c" 1
+int task_index;
+
 Action()
 {
 	 
@@ -2648,7 +2650,7 @@ Action()
 		"Name=rememberMe", "Value=false", "ENDITEM", 
 		"LAST");
 
-	web_url("{/", 
+	web_url("/", 
 		"URL={Host}:{Port}/", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2657,7 +2659,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("}/api/checkLogin", 
+	web_url("/api/checkLogin", 
 		"URL={Host}:{Port}/api/checkLogin", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2725,6 +2727,14 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
+	web_reg_save_param_json(
+        "ParamName=taskIdS",
+        "QueryString=$.content[*].id",
+        "SelectALL=Yes",
+        "SEARCH_FILTERS",
+        "Scope=Body",
+        "LAST");
+	
 	web_custom_request("/api/task/", 
 		"URL={Host}:{Port}/api/task/?state=1&page=0&size=10", 
 		"Method=GET", 
@@ -2736,13 +2746,17 @@ Action()
 		"Mode=HTML", 
 		"EncType=application/json; charset=utf-8", 
 		"LAST");
+	
+	task_index = rand() % atoi(lr_eval_string("{taskIdS_count}")) + 1;
+	
+	lr_save_string(lr_paramarr_idx("taskIdS", task_index), "taskID");
 
 	lr_end_transaction("UC03_TR02_Show_tasks",2);
 
 	lr_start_transaction("UC03_TR03_Open_task");
 
-	web_url("/api/task/149362", 
-		"URL={Host}:{Port}/api/task/149362", 
+	web_url("/api/task/{taskID}", 
+		"URL={Host}:{Port}/api/task/{taskID}", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=application/json", 
@@ -2761,8 +2775,8 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	web_url("/api/ticket/149362/comment/", 
-		"URL={Host}:{Port}/api/ticket/149362/comment/", 
+	web_url("/api/ticket/{taskID}/comment/", 
+		"URL={Host}:{Port}/api/ticket/{taskID}/comment/", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=application/json", 
@@ -2796,8 +2810,8 @@ Action()
 
 	lr_start_transaction("UC03_TR05_Submit_comment");
 
-	web_custom_request("/api/ticket/149362/comment/", 
-		"URL={Host}:{Port}/api/ticket/149362/comment/", 
+	web_custom_request("/api/ticket/{taskID}/comment/", 
+		"URL={Host}:{Port}/api/ticket/{taskID}/comment/", 
 		"Method=POST", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -2806,11 +2820,11 @@ Action()
 		"Snapshot=t17.inf", 
 		"Mode=HTML", 
 		"EncType=application/json; charset=utf-8", 
-		"Body={\"text\":\"New comment Ogdanets\",\"files\":[4696]}", 
+		"Body={\"text\":\"{Comment}\",\"files\":[4696]}", 
 		"LAST");
 
-	web_url("/api/ticket/149362/comment/", 
-		"URL={Host}:{Port}/api/ticket/149362/comment/", 
+	web_url("/api/ticket/{taskID}/comment/", 
+		"URL={Host}:{Port}/api/ticket/{taskID}/comment/", 
 		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=application/json", 
